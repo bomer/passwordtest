@@ -15,6 +15,8 @@ func handlePassword(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, http.StatusText(405), 405)
 		return
 	}
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
 	password := r.FormValue("password")
 	ret := Resp{}
 	ret.Success = false
