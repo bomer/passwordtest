@@ -1,0 +1,10 @@
+to run
+
+php  -S localhost:8001
+
+to get go,
+
+brew install go
+go run main.go
+
+open localhost:8000
